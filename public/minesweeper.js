@@ -9,12 +9,12 @@ function setCellClickListeners(){
 };
 
 function checkCellForBomb(cell){
-  var cellContent = $(cell).html().trim();
-  if (cellContent == "x"){
+  var cellContent = $(cell).find(".cellContent");
+  if (cellContent.html().trim() == "x"){
     alert("Game over!");
     window.location.reload(true);
   } else {
-    $(cell).addClass("clicked");
+    cellContent.addClass("clicked");
   };
 }
 
