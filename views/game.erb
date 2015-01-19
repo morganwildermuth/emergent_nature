@@ -1,9 +1,16 @@
-<% @game_board.each_with_index do |row, row_index|%>
-  <div id=<%= row_index %> class="row" >
-    <% row.each_with_index do |cell, cell_index| %>
-      <span id=<%= cell_index %> class="cell">
-        <%= cell %>
-      </span>
-    <% end %>
-  </div>
-<% end %>
+<header>
+  <div id="header">Minesweeper</div>
+</header>
+<table>
+  <% @game_board.each_with_index do |row, row_index|%>
+    <tr id=<%= row_index %> class="row" >
+      <% row.each_with_index do |cell, cell_index| %>
+        <td id=<%= cell_index %> class="cell">
+          <div class="cellContent">
+            <%= cell %>
+          </div>
+        </td>
+      <% end %>
+    </tr>
+  <% end %>
+</table>
