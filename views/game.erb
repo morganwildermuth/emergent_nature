@@ -1,5 +1,5 @@
 <% @game_board.each_with_index do |row, row_index|%>
-  <div id=<%= row_index %> >
+  <div id=<%= row_index %> class="row" >
     <% row.each_with_index do |cell, cell_index| %>
       <span id=<%= cell_index %> class="cell">
         <%= cell %>
