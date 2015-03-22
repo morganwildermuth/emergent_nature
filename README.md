@@ -1,1 +1,2 @@
-A simple Minesweeper game board (game to follow) written in Ruby with associated basic front end
+# emergent_nature
+A dynamic landscape rendered with randomized weather creating 'natural' changes, add species, then add turn based game component.
